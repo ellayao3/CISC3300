@@ -1,4 +1,23 @@
-<!-- 1. Define structural vs semantic meaning in regard to HTML elements.
+<!-- Written Hw 2 Qs and As:
+1. Define structural vs semantic meaning in regard to HTML elements.
+    - Structural markup would be the elements that you can use to describe both headings and paragraphs.
+    Semantic markup provides the extra information, for example, where emphasis is placed in a sentence, that something you have written is a quotation, 
+    the meanings of acronyms, etc. Example: <h1>, <h2>, and <p> would be structural & <cite> and <em> would be semantic. 
+
 2. Why is it important to use correct html elements when designing web pages?
+    - A semantically correct use of html elements is essential as it informs the browser and developer about its content. 
+    In class we discussed the use of <strong> instead of <b>. Where the website will display both in bold. However, it is important to properly define the html 
+    element since there may be a blind person that may be using a reading software. Properly defining the html elements allows for the users to get the 
+    appropriate reading when they are listening to the content on the webpage. 
+
 3. What are forms in html? What is their purpose? When would you use one?
-4. Define and contrast inline vs block elements. --> fvnjdfngldkgn
+    - Forms in html borrow the traditional term of ‘form’ in a physical written document. The concept in html refers to different elements that allow you to 
+    collect information from visitors to your site (this lives inside the <form> element. Examples of uses could include: collecting users' contact information or usernames. 
+
+4. Define and contrast inline vs block elements. 
+    - Inline elements will always appear to continue on the same line as their neighboring elements. Examples: <a>, <b>, <em>, and <img> Block elements will 
+    always appear to start on a new line in the browser window. Examples: <h>, <p>, <ul>, and <li> An inline doesn’t start on a new line and it only takes up 
+    as much space as necessary. A block element always starts on a new line, and the browser automatically adds some space (a margin) before and after the element. 
+    It takes up the full width of the available space. --> 
+        
+        
