@@ -1,0 +1,39 @@
+HW3 Written Qs and As:
+Compare and contrast margin, padding, and border
+Margin is the space outside the border of an element. It creates space between the element's border and surrounding elements. 
+It is commonly used to create spacing between elements on a page.  Margins do not have a background color, and they do not affect
+the size or layout of the element itself. Padding is the space between the content of an element and its border. It creates space 
+within the element. Padding is often used to add internal space or breathing room around the content within an element. Padding is 
+affected by the background color or image of the element, and it does not affect the size of the element itself. Border is the line 
+or outline that surrounds the padding and content of an element. Borders are commonly used to visually separate or highlight elements
+on a page. Borders can have various styles (solid, dashed, dotted, etc.), colors, and widths, and they directly affect the size of the element.
+
+Define the following flexbox css rules https://css-tricks.com/snippets/css/a-guide-to-flexbox/:
+a. display: flex
+b. Flex-direction
+c. Flex-wrap
+d. justify-content/align-items
+e. align-content
+
+
+a. This rule is applied to a container element to establish a flex container. It enables a flex context for all its direct children. 
+This means the children of this container can be flex items, and they will follow the flex layout rules
+b. This property specifies the direction of the main axis in a flex container. It determines how flex items are laid out within the container. 
+Possible values are: row: Items are laid out horizontally in the same direction as the writing mode. row-reverse: Items are laid out horizontally
+in the opposite direction of the writing mode.  column: Items are laid out vertically from top to bottom. column-reverse: Items are laid out vertically 
+from bottom to top.
+c. This property specifies whether flex items are forced onto a single line or can wrap onto multiple lines within a flex container when there's not enough 
+space along the main axis. Possible values are: nowrap: All flex items are forced onto one line (default behavior). wrap: Flex items can wrap onto multiple 
+lines if needed. wrap-reverse: Flex items wrap onto multiple lines in reverse order.
+d. This property aligns flex items along the main axis of the flex container. It helps to distribute extra free space left over when either all the flex items 
+on a line are inflexible, or are flexible but have reached their maximum size. Possible values are: flex-start: Items are packed toward the start of the main axis.
+flex-end: Items are packed toward the end of the main axis. center: Items are centered along the main axis. space-between: Items are evenly distributed along the main
+axis with the first item at the start and the last item at the end. space-around: Items are evenly distributed along the main axis with equal space around them.
+e. This property aligns flex items along the cross axis of the flex container. It helps to control how flex items are positioned within the flex container in the 
+cross-axis direction. Possible values are: stretch: Items are stretched to fill the container. flex-start: Items are packed toward the start of the cross axis. flex-end: Items are
+packed toward the end of the cross axis. center: Items are centered along the cross axis. baseline: Items are aligned such as their baselines align. 
+f. This property aligns a flex container's lines within the flex container when there is extra space on the cross-axis. It has effect only when flex items are wrapped onto 
+multiple lines using flex-wrap. Possible values are: flex-start: Lines are packed toward the start of the cross axis. flex-end: Lines are packed toward the end of the
+cross axis. center: Lines are centered along the cross axis. space-between: Lines are evenly distributed along the cross axis with the first line at the start and the last line 
+at the end. space-around: Lines are evenly distributed along the cross axis with equal space around them. stretch: Lines are stretched to fit the container.
+
