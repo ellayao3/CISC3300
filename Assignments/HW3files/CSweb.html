@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Computer Science Department</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .parent-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .computer-science-container {
+            order: 2;
+            margin-top: 5px; /* Reduce top margin */
+            margin-bottom: 5px; /* Reduce bottom margin */
+        }
+
+        .majors-container {
+            order: 1;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #e7ebe7;
+            padding: 0 20px;
+        }
+
+        .divider {
+            padding: 0 5px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .parent-container {
+                flex-direction: row;
+            }
+            .computer-science-container {
+                width: 900px;
+                order: 2;
+            }
+            .majors-container {
+                width: 300px;
+                order: 1;
+            }
+        }
+
+        .content-container {
+            margin-top: 20px;
+        }
+
+        .button {
+            text-align: center;
+            background-color: maroon;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .computer-science-content-container {
+            margin-top: 20px;
+        }
+
+        .computer-science-content-container h1 {
+            font-size: 3.0em;
+            margin: 0;
+            color: maroon;
+        }
+
+        .computer-science-content-container p {
+            margin-top: 10px;
+        }
+
+        .quote {
+            font-size: 1.2em; /* Increase font size */
+            margin-top: 20px; /* Add margin for spacing */
+        }
+
+        .link {
+            color: maroon; /* Set link color */
+            text-decoration: underline; /* Add underline */
+            cursor: pointer; /* Change cursor on hover */
+        }
+
+        footer {
+            background-color: #005827;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="parent-container">
+    <div class="majors-container">
+        <div class="majors-content-container">
+            <p>Majors and Minors</p>
+            <p>What's Your Passion?</p>
+            <p>Accelerated Degree Programs</p>
+            <div class="button">Majors and Minors</div>
+        </div>
+    </div>
+    <div class="computer-science-container">
+        <div class="nav">
+            Home
+            <span class="divider">/</span>
+            Admissions and Aid
+            <span class="divider">/</span>
+            Undergraduate Admission
+            <span class="divider">/</span>
+            Majors and Minors
+            <span class="divider">/</span>
+            Computer Science 
+        </div>
+        <div class="computer-science-content-container">
+            <h1>Computer Science</h1>
+            <div class="content-container">
+                <p> Degree Options: Major, Minor</p>
+                <p>Locations: Lincoln Center, Rose Hill</p>
+                <p>Visit the <span class="link">Computer and Information Science Department</span></p>
+                <p class="quote">Wherever there’s a computer, there’s a skilled person developing, maintaining, hacking, advancing or simply using it. Be that person.</p>
+                <img src="../EllaYao/Desktop/GitHub/Assignments/HW3files/fordham-cs-image.jpg" alt="Picture" width="25%" align="right">
+
+                <p>It’s difficult to imagine life without computers when they’re so central to our information-driven global society. But it’s not difficult to imagine the amazing pursuits you’ll be prepared for with a degree in computer science from Fordham’s department of Computer and Information Sciences.</p>
+                <p>The computer science major emphasizes science and technology, including software design and programming, computer architecture and functions, and the development of an ability to analyze and solve problems in using the computer as a tool.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
