@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript DOM Manipulation</title>
+<style>
+  .blue {
+    color: blue;
+  }
+</style>
+</head>
+<body>
+  <button id="btn1">Change Text</button>
+  <ul id="list">
+    <li>Pros</li>
+    <li>Cons</li>
+    <li>Neutral</li>
+  </ul>
+  <div id="container">
+    <button id="btn2">Add Paragraph</button>
+  </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Task 1: Change button text when clicked
+    const btn1 = document.getElementById('btn1');
+    btn1.addEventListener('click', function() {
+      btn1.innerText = 'Text Changed';
+    });
+
+    // Task 2: Change list item colors to blue when any list item is clicked
+    const listItems = document.querySelectorAll('#list li');
+    listItems.forEach(item => {
+      item.addEventListener('click', function() {
+        listItems.forEach(li => {
+          li.classList.add('blue');
+        });
+      });
+    });
+
+    // Task 3: Add paragraph element when button2 is clicked
+    const container = document.getElementById('container');
+    const btn2 = document.getElementById('btn2');
+    btn2.addEventListener('click', function() {
+      const paragraph = document.createElement('p');
+      paragraph.textContent = 'Hi I am the new paragraph added';
+      container.appendChild(paragraph);
+    });
+  });
+</script>
+</body>
+</html>
