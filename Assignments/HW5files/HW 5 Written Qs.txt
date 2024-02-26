@@ -1,0 +1,8 @@
+HW 5 Written Qs:
+
+What is the DOM? What is meant by the DOM tree?
+Document Object Model (DOM) is the data representation of the objects that comprise the structure and content of a document on the web. It represents the webpage as nodes and objects; allowing programming languages to interact with the page. As an object-oriented representation of the web page, it can be modified w/ a scripting language such as JavaScript. The DOM tree is a hierarchical representation of an HTML or XML document. It consists of a root node, which is the document itself, and a series of child nodes that represent the elements, attributes, and text content of the document. (Ability to create dynamic web content)
+
+
+What is a XSS attack? How do they work? How can you guard against them?
+Cross-Site Scripting (XSS) is an attack in which an attacker injects malicious executable scripts into the code of a trusted website. Uses the server to attack visitors(users) of the server. They work by injection, where the attacker finds a vulnerable input field or param. The code that they inject contains malicious code designed to exploit in the context of users’ browsers. This allows the attackers to manipulate or steal sensitive information and compromises the security of the web page and its users. Some common strategies to guard against them are: Input Validation sanitation, Escape Output, Using Strict mode, avoiding using eval(), regular security outputs, etc.  Helpful link: https://portswigger.net/web-security/cross-site-scripting
