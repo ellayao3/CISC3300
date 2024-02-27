@@ -1,0 +1,37 @@
+Homework 6 Written Qs:
+1. What is HTTP? What are the different HTTP request methods and how do they differ?
+- HyperText Transfer Protocol: How the internet handles communication between clients and servers, is done by requests and
+responses. Protocol in the application layer for fetching resources such as HTML documents. It is the foundation of any data
+exchange on the Web and it is a client-server protocol, which means requests are initiated by the recipient, usually the 
+Web browser. 
+Methods include:
+        Get - should only ever retrieve data
+        Post - submits an entity to the specified resource, often causing a change in state or side effects on the server - usually something to be saved.
+        Put - method replaces all current representations of the target resource with the request payload - update everything for a resource 
+        Patch - partially modify a resource - not really used much, post is more common
+        Delete - delete a resource 
+
+2. What is an API? What is JSON?
+- Application Programming Interface (API): User interfaces let humans interact with programs; APIs let programs (and scripts) 
+talk to each other. The DOM states what your script can “ask the browser about the current page, and how to tell the browser to
+update what is being shown to the user. 
+- JavaScript Object Notation (JSON): Text data but JS is ready to parse it into javascript objects and vice versa. It is a format
+for storing and transporting data. Is often used when data is sent from a server to a web page. It is a lightweight data interchange
+format, language independent, and is “self-describing” and easy to understand. 
+- Syntax Rules for JSON:
+        Data is in name/value pairs
+        Data is separated by commas
+        Curly braces hold objects 
+        Square brackets hold arrays 
+3. What is AJAX? What is meant by asynchronous code?
+- Asynchronous JavaScript and XML (AJAX): Technique for loading data into part of a page without having to refresh the entire page. 
+Uses a combination of: A browser built in XMLHttpRequest object (to request data from a web server) & JavaScript and HTML DOM 
+(to display or use the data). Data formats include: html, xml, json
+- It is a developers dream bc you can:
+        Read data from a web server - after the page has loaded
+        Update a web page without reloading the page 
+        Send data to a web server - in the background 
+- Asynchronous code in AJAX refers to the ability to execute code independently of other parts of the program. In the context of 
+AJAX (Asynchronous JavaScript and XML), it primarily relates to the ability to send requests to a server and receive responses 
+without blocking the execution of other code.
+

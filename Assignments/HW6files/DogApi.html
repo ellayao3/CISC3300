@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Random Dog Images</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    // API endpoint for random dog image
+    var randomDogImageUrl = "https://dog.ceo/api/breeds/image/random";
+
+    // Function to fetch and display random dog image with breed
+    function fetchRandomDogImage() {
+        $.get(randomDogImageUrl, function(data, status){
+            if (status === "success") {
+                var imageUrl = data.message;
+                var breed = getBreedFromImageUrl(imageUrl);
+                var imgElement = $("<img>").attr("src", imageUrl);
+                var breedElement = $("<p>").text("Breed: " + breed);
+                $("#dog-images").empty().append(imgElement, breedElement);
+            } else {
+                $("#dog-images").html("Failed to fetch dog image.");
+            }
+        });
+    }
+
+    // Function to extract breed from image URL
+    function getBreedFromImageUrl(imageUrl) {
+        var parts = imageUrl.split('/');
+        var breedIndex = parts.findIndex(part => part === 'breeds');
+        if (breedIndex !== -1 && parts[breedIndex + 1]) {
+            return parts[breedIndex + 1];
+        }
+        return 'Unknown Breed';
+    }
+
+    // Fetch random dog image with breed on page load
+    fetchRandomDogImage();
+
+    // Event listener for button click to fetch a new random dog image with breed
+    $("#new-dog-btn").click(function(){
+        fetchRandomDogImage();
+    });
+});
+</script>
+</head>
+<body>
+<h1>Dog Images & Breeds :)</h1>
+<div id="dog-images"></div>
+<button id="new-dog-btn">Click me for new dog</button>
+</body>
+</html>
