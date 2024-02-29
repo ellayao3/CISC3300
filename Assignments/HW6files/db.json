@@ -1,0 +1,39 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "key1": "Hi my name is",
+      "key2": "Ella",
+      "id": "2"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": "3572",
+      "key1": "value1",
+      "key2": "value2"
+    },
+    {
+      "id": "3649",
+      "key1": "value1",
+      "key2": "value2"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

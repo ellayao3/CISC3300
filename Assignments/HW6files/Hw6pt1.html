@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Requests</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+<script>
+    $(document).ready(function() {
+        $.ajax({
+            url: 'http://localhost:3000/posts/',
+            type: 'GET',
+            success: function(posts) {
+                console.log('GET Request Response:', posts);
+            }
+        });
+    });
+
+    var newData = {
+        key1: 'value1',
+        key2: 'value2'
+    };
+
+    $.ajax({
+        url: 'http://localhost:3000/comments',
+        type: 'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(newData),
+        success: function(comments) {
+            console.log('POST Request Response:', comments);
+        }
+    });
+
+    var updatedData = {
+        key1: 'Hi my name is',
+        key2: 'Ella'
+    };
+
+    $.ajax({
+        url: 'http://localhost:3000/posts/2',
+        type: 'PUT',
+        contentType: 'application/json',
+        data: JSON.stringify(updatedData),
+        success: function(posts) {
+            console.log('PUT Request Response:', posts);
+        }
+    });
+</script>
+
+</body>
+</html>
